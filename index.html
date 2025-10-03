@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>TheMephedroneWhore — Bio</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+
+</head>
+<body>
+  <canvas id="snow"></canvas>
+
+  <audio id="bg-music" loop>
+    <source src="music/ms.mp3" type="audio/mpeg">
+    <source src="music/ms.ogg" type="audio/ogg">
+    Ваш браузер не поддерживает воспроизведение аудио.
+  </audio>
+
+  <!-- Overlay -->
+  <div id="overlay" class="overlay">
+    <div class="overlay-content">
+      <h2>Добро пожаловать!</h2>
+      <button id="start-btn" class="start-btn">ОК</button>
+      <p id="audio-status" style="margin-top:10px; font-size:14px; color:white;"></p>
+    </div>
+  </div>
+
+  <main class="container blurred">
+    <section class="card">
+      <div class="avatar-row">
+        <div class="avatar-wrap">
+          <img src="images/avatar.jpg" alt="avatar" class="avatar">
+          <div class="ring"></div>
+          <div class="audio-ring"></div>
+        </div>
+        <div class="avatar-info">
+          <h1 class="name">TheMephedroneWhore</h1>
+          <p class="tag">Онлифанс модель</p>
+        </div>
+      </div>
+      
+      <p class="lead">⠀</p>
+      <div class="divider"></div>
+
+      <p class="lead">Днём пишу код, ночью пишу тебя.
+Мой мозг работает быстрее, чем процессор, а моя страсть к мефу и кодингу — идеальное топливо.</p>
+      <p class="lead">Ищи меня в Discord — там я просто люблю поболтать.</p>
+      <p class="lead">Всё самое грязное, сырое и без цензуры в моём Telegram-канале</p>
+
+
+      <div class="links">
+        <a class="btn" href="https://t.me/TheMephedroneWhore" target="_blank" rel="noopener noreferrer">
+          <img src="images/telegram.svg" alt="Telegram" class="logo">
+          <span>Telegram<small>t.me/TheMephedroneWhore</small></span>
+        </a>
+
+        <a class="btn secondary" href="https://discord.com/invite/dark-forest" target="_blank" rel="noopener noreferrer">
+          <img src="images/discord.svg" alt="Discord" class="logo">
+          <span>Discord<small>discord.gg/dark-forest</small></span>
+        </a>
+      </div>
+
+      <p class="hint">Подпишись на ТГК, пока меня не забанили</p>
+
+      <footer class="foot">
+        <span>© 2025 TheMephedroneWhore</span>
+        <span class="ideas"></span>
+      </footer>
+    </section>
+
+    <section class="volume-tile">
+      <h3>Громкость</h3>
+      <div class="volume-control">
+        <input type="range" id="volume" min="0" max="1" step="0.01" value="0.2">
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

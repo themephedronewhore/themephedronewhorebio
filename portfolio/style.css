@@ -1,0 +1,543 @@
+/* ========================================= */
+/* GENERAL STYLES & RESET by mephedronewhore */
+/* ========================================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+/* by mephedronewhore */
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0; 
+    padding: 0; 
+    overflow-x: hidden;
+    scroll-behavior: smooth; 
+}
+
+@font-face {
+    font-family: "CustomKqlatrikFont"; /* by mephedronewhore */
+    src: url("fonts/NeueMontrealBoldItalic700.otf") format("opentype"); /* by mephedronewhore */
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* === FONT IMPORT === by mephedronewhore */
+@font-face {
+    font-family: "Zantiqa";
+    src: url("fonts/Zantiqa.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* === MAIN BODY STYLES === */
+body {
+    background: #000;
+    color: #fff;
+    font-family: "Zantiqa", "Inter Tight", Arial, sans-serif;
+    font-size: 18px;
+    letter-spacing: 0.2px;
+    line-height: 1.6;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+    transition: 0.3s;
+}
+a:hover {
+    color: #cfcfcf;
+}
+
+/* ========================================= */
+/* NAVBAR by mephedronewhore */
+/* ========================================= */
+.navbar {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.navbar ul li a {
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    font-size: 18px;
+    transition: 0.3s ease;
+}
+
+.navbar ul li a:hover {
+    color: #cfcfcf;
+}
+
+/* ========================================= */
+/* HERO SECTION by mephedronewhore */
+/* ========================================= */
+.hero-wrapper {
+    height: 100vh; /* by mephedronewhore */
+    display: flex; 
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    background-image: url('jpg/4.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.hero-panel {
+    flex: 1; /* by mephedronewhore */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+/* by mephedronewhore */
+.hero-panel::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); 
+    z-index: 1;
+}
+
+/* by mephedronewhore */
+.hero-panel.panel-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-content {
+    text-align: center;
+    z-index: 5; /* by mephedronewhore */
+}
+
+/* === UNIQUE BACKGROUND IMAGES by mephedronewhore === */
+/* Removed individual panel backgrounds, now using hero-wrapper background */
+
+/* ========================================= */
+/* HEADERS, TEXT & SECTIONS by mephedronewhore */
+/* ========================================= */
+h1 {
+    font-weight: 4;
+    font-size: 40px; 
+    letter-spacing: -1px; 
+    text-transform: uppercase;
+    font-family: 'CustomKqlatrikFont', sans-serif;
+    transition: transform 0.1s ease;
+    transform-origin: center;
+    will-change: transform;
+}
+
+h2 {
+    font-weight: 400;
+    font-size: 34px;
+    letter-spacing: -0.5px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 21px;
+    line-height: 1.85;
+    color: #EDEDED;
+    margin-bottom: 20px;
+}
+
+section {
+    padding: 120px 14%;
+}
+
+.line {
+    width: 100px;
+    height: 1px;
+    background: #666;
+    margin: 30px 0; 
+}
+
+.quote {
+    font-style: italic;
+    opacity: 0.7;
+    font-size: 24px;
+    border-left: 3px solid #555;
+    padding-left: 30px;
+    margin-top: 50px;
+}
+
+/* ========================================= */
+/* CONTACT ICONS by mephedronewhore */
+/* ========================================= */
+.icons-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px; 
+    margin-top: 40px;
+}
+
+.icon {
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 500;
+    color: #fff;
+    padding: 12px 18px;
+    border: 1px solid #555;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.icon:hover {
+    color: #000;
+    background: #fff;
+    transform: translateY(-3px);
+    border-color: #fff;
+}
+
+/* ========================================= */
+/* MOBILE RESPONSIVE STYLES by mephedronewhore */
+/* ========================================= */
+@media (max-width: 768px) {
+    section {
+        padding: 70px 8%;
+    }
+    h1 {
+        font-size: 44px;
+    }
+    h2 {
+        font-size: 24px;
+    }
+    p {
+        font-size: 19px;
+    }
+    .quote {
+        font-size: 20px;
+    }
+    .icons-wrapper {
+        gap: 15px;
+    }
+    .icon {
+        font-size: 16px;
+        padding: 10px 14px;
+    }
+    .navbar ul {
+        gap: 15px;
+    }
+    .navbar ul li a {
+        font-size: 14px;
+    }
+
+    /* Mobile styles for HERO by mephedronewhore */
+    .hero-wrapper {
+        display: block; 
+        height: 100vh;
+    }
+    .hero-panel {
+        display: none; 
+    }
+    .panel-center {
+        display: flex; 
+        height: 100%;
+    }
+
+    /* by mephedronewhore */
+    .gallery-item {
+        /* ONLY on mobile by mephedronewhore */
+        aspect-ratio: 1 / 1; 
+    }
+}
+
+/* ========================================= */
+/* GALLERY STYLES (PC VERSION DEFAULT) by mephedronewhore */
+/* ========================================= */
+#gallery {
+    padding: 120px 14%;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* by mephedronewhore */
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.gallery-item {
+    position: relative; /* by mephedronewhore */
+    overflow: hidden; /* by mephedronewhore */
+    border-radius: 10px;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* by mephedronewhore */
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+
+.gallery-item img:hover {
+    transform: scale(1.1); /* by mephedronewhore */
+    opacity: 0.8;
+}
+
+/* ========================================= */
+/* MOBILE RESPONSIVE STYLES FOR GALLERY by mephedronewhore */
+/* ========================================= */
+@media (max-width: 768px) {
+    #gallery {
+        padding: 70px 8%;
+    }
+
+    .gallery-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns on mobile devices by mephedronewhore */
+    }
+}
+
+/* ========================================= */
+/* PORTFOLIO STYLES */
+/* ========================================= */
+#portfolio {
+    padding: 120px 14%;
+}
+
+.portfolio-list {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-top: 30px;
+}
+
+.portfolio-item {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.portfolio-item h3 {
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+
+.portfolio-item p {
+    margin-bottom: 15px;
+    color: #cfcfcf;
+}
+
+.portfolio-item a {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.portfolio-item a:hover {
+    color: #cfcfcf;
+}
+
+/* ========================================= */
+/* MODAL STYLES by mephedronewhore */
+/* ========================================= */
+
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 100; 
+    padding-top: 50px; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgba(0,0,0,0.9);
+}
+
+/* Modal content by mephedronewhore */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 90%;
+    max-width: 800px;
+    max-height: 85vh; 
+    object-fit: contain;
+}
+
+/* Caption by mephedronewhore */
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 50px;
+    font-size: 18px;
+}
+
+/* Close button by mephedronewhore */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Animation (zoom) by mephedronewhore */
+.modal-content, #caption {  
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)} 
+    to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+}
+
+/* Mobile adaptation by mephedronewhore */
+@media only screen and (max-width: 700px){
+    .modal-content {
+        width: 100%;
+    }
+}
+
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    background: #000;
+    color: #fff;
+    font-family: Zantiqa, sans-serif;
+}
+
+/* =============================== */
+/* TOP BUTTONS */
+/* =============================== */
+
+.menu-btn,
+.lang-btn {
+    position: fixed;
+    top: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 3000;
+}
+
+.menu-btn {
+    left: 1px;
+}
+
+.lang-btn {
+    right: 40px;
+}
+
+.menu-btn img,
+.lang-btn img {
+    width: 88px;
+    height: auto;
+    display: block;
+}
+
+/* =============================== */
+/* MENU PANELS — FIXED & WORKING */
+/* =============================== */
+
+.menu-panel {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.96);
+    backdrop-filter: blur(6px);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    opacity: 0;
+    pointer-events: none;
+
+    transition:
+        transform 0.7s cubic-bezier(0.77, 0, 0.175, 1),
+        opacity 0.4s ease;
+
+    z-index: 2000;
+}
+
+/* MAIN MENU — FROM LEFT */
+#main-menu {
+    transform: translateX(-100%);
+}
+
+/* ACTIVE STATES (IMPORTANT) */
+#main-menu.active {
+    transform: translateX(0);
+    opacity: 1;
+    pointer-events: auto;
+}
+
+#lang-menu.active {
+    transform: translateX(0);
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.menu-panel,
+.menu-panel ul li a {
+    font-family: "Zantiqa", "Inter Tight", Arial, sans-serif;
+    font-weight: 600; /* или 400/700, в зависимости от дизайна */
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-size: 18px;
+    color: #fff;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Zantiqa&display=swap');
+
+.footer-credit {
+    text-align: center;     /* по центру */
+    padding: 20px;
+}
+
+.footer-credit .creator-link {
+    color: #fff;                   /* белый текст */
+    text-decoration: none;          /* без подчеркивания */
+    font-family: 'Zantiqa', sans-serif; /* шрифт Zantiqa */
+    font-size: 14px;
+}

@@ -1,91 +1,101 @@
-<!doctype html>
-<html lang="ru">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>TheMephedroneWhore — Bio</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>/home/4mmcwhore/profile</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/svg+xml" href="svg/favicon.svg">
 </head>
+
 <body>
-  <canvas id="snow"></canvas>
 
-  <audio id="bg-music" loop>
-    <source src="music/ms.mp3" type="audio/mpeg">
-    <source src="music/ms.ogg" type="audio/ogg">
-    Ваш браузер не поддерживает воспроизведение аудио.
-  </audio>
+<button class="menu-btn" data-target="main-menu">
+    <img src="img/logo.jpg" alt="Menu">
+</button>
 
-  <!-- Overlay -->
-  <div id="overlay" class="overlay">
-    <div class="overlay-content">
-      <h2>Добро пожаловать!</h2>
-      <button id="start-btn" class="start-btn">ОК</button>
-      <p id="audio-status" style="margin-top:10px; font-size:14px; color:white;"></p>
+<nav id="main-menu" class="menu-panel">
+    <ul>
+        <li><a href="#hero">Home</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<div class="hero-wrapper" id="hero-wrapper">
+    <div class="hero-panel panel-left"></div>
+    <div class="hero-panel panel-center">
+        <div class="hero-content">
+            <h1>MephedroneWhore</h1>
+        </div>
     </div>
-  </div>
+    <div class="hero-panel panel-right"></div>
+</div>
 
-  <main class="container blurred">
-    <section class="card">
-      <div class="avatar-row">
-        <div class="avatar-wrap">
-          <img src="images/avatar.jpg" alt="avatar" class="avatar">
-          <div class="ring"></div>
-          <div class="audio-ring"></div>
-        </div>
-        <div class="avatar-info">
-          <h1 class="name">TheMephedroneWhore</h1>
-          <p class="tag">Онлифанс модель</p>
-        </div>
-      </div>
-      
-      <p class="lead">⠀</p>
-      <div class="divider"></div>
+<section class="section" id="about">
+    <h2>About</h2>
+    <div class="line"></div>
+    <p>
+        My name is Lev, I am 16 years old and I am from Russia.
+        I am a programmer, focusing on full-stack development.
+    </p>
+</section>
 
-      <p class="lead">Днём пишу код, ночью пишу тебe.
-Мой мозг работает быстрее, чем процессор, а моя страсть к мефу и кодингу — идеальное топливо.</p>
-      <p class="lead">Ищи меня в Discord — там я просто люблю поболтать.</p>
-      <p class="lead">Всё самое грязное, сырое и без цензуры в моём Telegram-канале</p>
+<section class="section">
+    <h2>Biography</h2>
+    <div class="line"></div>
 
-      <div class="links">
-        <a class="btn" href="https://t.me/TheMephedroneWhore" target="_blank" rel="noopener noreferrer">
-          <img src="images/telegram.svg" alt="Telegram" class="logo">
-          <span>Telegram<small></small></span>
+    <p>
+        I am a programmer, focusing on full-stack development. I am already working on creating projects, including building a complete Minecraft project with custom plugins and a unique game mode.
+    </p>    
+    <p>
+        I am interested in technology, programming, gaming, and motorsports. In my free time, I continue improving my skills and exploring new ideas.
+    </p>
+    <p>
+        My goal is to build my own company focused on game server hosting and data storage solutions.
+    </p>
+</section>
+
+<section class="section">
+    <h2>Skills</h2>
+    <div class="line"></div>
+    <p>
+        Frontend: HTML, CSS, JavaScript<br>
+        Backend: Java, Python, C++<br>
+        Databases: MariaDB, PostgreSQL<br>
+        Tools: Git, Docker, AWS
+    </p>
+</section>
+
+<section class="section">
+    <h2>Experience</h2>
+    <div class="line"></div>
+    <p>
+        Over 3 years of experience in web application development. Worked on projects from prototypes to production.
+    </p>
+</section>
+
+<section class="section contact-icons" id="contact">
+    <h2>Links</h2>
+    <div class="line"></div>
+    <div class="icons-wrapper">
+        <a href="https://github.com/themephedronewhore" target="_blank" class="icon github">GitHub</a>
+        <a href="https://www.tiktok.com/@4mmcwhore" target="_blank" class="icon linkedin">TikTok</a>
+        <a href="https://t.me/mephedronewhore_oficial" target="_blank" class="icon x">Telegram</a>
+        <a href="https://www.instagram.com/mephedronewhore" target="_blank" class="icon instagram">Instagram</a>
+        <a href="mailto:artem@kqlatrik.com" target="_blank" class="icon email">Email</a>
+    </div>
+</section>
+
+<footer class="footer-credit">
+    <p>
+        <a href="https://themephedronewhore.ru" target="_blank" class="creator-link">
+            © 2025 MephedroneWhore
         </a>
+    </p>
+</footer>
 
-        <a class="btn secondary" href="https://discord.com/invite/dark-forest" target="_blank" rel="noopener noreferrer">
-          <img src="images/discord.svg" alt="Discord" class="logo">
-          <span></strong>Discord</strong><small></small></span>
-        </a>
-
-        <!-- 💰 Новые кнопки крипты -->
-        <button class="btn copy-btn" data-wallet="bc1qyvcvcuymugrvd3tkf5d97kw85na322h3m4h8zc">
-          <img src="images/bitcoin.svg" alt="Bitcoin" class="logo">
-          <span>Bitcoin<small></small></span>
-        </button>
-
-        <button class="btn copy-btn secondary" data-wallet="TJuGZ59eULVCGvrCvescTqUA7YkY55mvUf">
-          <img src="images/trc20.svg" alt="USDT-TRC20" class="logo">
-          <span>USDT<small></small></span>
-        </button>
-      </div>
-
-      <p class="hint">Подпишись на ТГК, пока меня не забанили</p>
-
-      <footer class="foot">
-        <span>© 2025 TheMephedroneWhore</span>
-        <span class="ideas"></span>
-      </footer>
-    </section>
-
-    <section class="volume-tile">
-      <h3>Громкость</h3>
-      <div class="volume-control">
-        <input type="range" id="volume" min="0" max="1" step="0.01" value="0.2">
-      </div>
-    </section>
-  </main>
-
-  <script src="script.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
